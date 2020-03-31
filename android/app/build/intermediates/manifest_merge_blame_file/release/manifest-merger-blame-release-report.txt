@@ -1,0 +1,1206 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.test_app"
+4    android:versionCode="1"
+5    android:versionName="1.4.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:7:3-9:42
+12        android:name="com.test_app.permission.C2D_MESSAGE"
+12-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:8:5-55
+13        android:protectionLevel="signature" />
+13-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:9:5-40
+14
+15    <!-- These are required permissions to make the app run -->
+16    <uses-permission android:name="com.test_app.permission.C2D_MESSAGE" />
+16-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:12:3-73
+16-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:12:20-70
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:13:3-80
+17-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:13:20-77
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:14:3-77
+18-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:14:20-74
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:15:3-65
+19-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:15:20-62
+20    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+20-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:16:3-76
+20-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:16:20-73
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:17:3-66
+21-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:17:20-63
+22
+23    <!-- ADD PERMISSIONS HERE -->
+24    <!-- BEGIN OPTIONAL PERMISSIONS -->
+25    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+25-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:21:3-73
+25-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:21:20-70
+26    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+26-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:22:3-78
+26-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:22:20-75
+27    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+27-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:23:3-73
+27-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:23:20-70
+28    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+28-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:24:3-72
+28-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:24:20-69
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:25:3-64
+29-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:25:20-61
+30    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+30-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:26:3-86
+30-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:26:20-83
+31    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+31-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:27:3-78
+31-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:27:20-75
+32
+33    <!-- These require runtime permissions on M -->
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:30:3-79
+34-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:30:20-76
+35    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+35-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:31:3-77
+35-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:31:20-74
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:32:3-63
+36-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:32:20-60
+37    <uses-permission android:name="android.permission.READ_CONTACTS" />
+37-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:33:3-70
+37-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:33:20-67
+38    <uses-permission android:name="android.permission.READ_CALENDAR" />
+38-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:34:3-70
+38-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:34:20-67
+39    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+39-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:35:3-71
+39-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:35:20-68
+40    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+40-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:36:3-78
+40-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:36:20-75
+41    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+41-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:37:3-69
+41-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:37:20-66
+42    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+42-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:38:3-79
+42-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:38:20-76
+43    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+43-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:39:3-71
+43-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:39:20-68
+44    <!-- END OPTIONAL PERMISSIONS -->
+45
+46
+47    <!-- ADD TEST PERMISSIONS HERE -->
+48
+49    <uses-feature
+49-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:44:3-77
+50        android:glEsVersion="0x00020000"
+50-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:44:17-49
+51        android:required="true" />
+51-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:44:50-74
+52    <uses-feature
+52-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:45:3-85
+53        android:name="android.software.leanback"
+53-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:45:17-57
+54        android:required="false" />
+54-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:45:58-82
+55    <uses-feature
+55-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:46:3-88
+56        android:name="android.hardware.touchscreen"
+56-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:46:17-60
+57        android:required="false" />
+57-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:46:61-85
+58
+59    <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+60    <supports-screens
+60-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:13:5-19:24
+61        android:anyDensity="true"
+61-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:14:9-34
+62        android:largeScreens="true"
+62-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:15:9-36
+63        android:normalScreens="true"
+63-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:16:9-37
+64        android:smallScreens="true"
+64-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:17:9-36
+65        android:xlargeScreens="true" >
+65-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:18:9-37
+66    </supports-screens>
+67
+68    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE" /> <!-- Used by react-native-netinfo module -->
+68-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:26:5-80
+68-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:26:22-77
+69    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+69-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:34:5-76
+69-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:34:22-73
+70
+71    <uses-feature
+71-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:47:5-49:36
+72        android:name="android.hardware.camera"
+72-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:48:9-47
+73        android:required="false" />
+73-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:49:9-33
+74    <uses-feature
+74-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:50:5-52:36
+75        android:name="android.hardware.camera.autofocus"
+75-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:51:9-57
+76        android:required="false" />
+76-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:52:9-33
+77    <uses-feature
+77-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:53:5-55:36
+78        android:name="android.hardware.location"
+78-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:54:9-49
+79        android:required="false" />
+79-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:55:9-33
+80    <uses-feature
+80-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:56:5-58:36
+81        android:name="android.hardware.location.gps"
+81-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:57:9-53
+82        android:required="false" />
+82-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:58:9-33
+83    <uses-feature
+83-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:59:5-61:36
+84        android:name="android.hardware.location.network"
+84-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:60:9-57
+85        android:required="false" />
+85-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:61:9-33
+86    <uses-feature
+86-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:62:5-64:36
+87        android:name="android.hardware.wifi"
+87-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:63:9-45
+88        android:required="false" />
+88-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:64:9-33
+89    <uses-feature
+89-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:65:5-67:36
+90        android:name="android.hardware.microphone"
+90-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:66:9-51
+91        android:required="false" />
+91-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:67:9-33
+92    <uses-feature
+92-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:68:5-70:36
+93        android:name="android.hardware.telephony"
+93-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:69:9-50
+94        android:required="false" />
+94-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:70:9-33
+95    <uses-feature
+95-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:71:5-73:36
+96        android:name="android.hardware.bluetooth"
+96-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:72:9-50
+97        android:required="false" />
+97-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:73:9-33
+98
+99    <uses-permission android:name="android.permission.STORAGE" />
+99-->[:expo-file-system] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:5-66
+99-->[:expo-file-system] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:22-63
+100    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for android -->
+100-->[:expo-location] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-77
+100-->[:expo-location] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:22-74
+101    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+102    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+103    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+104    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+105    <!-- for Samsung -->
+106    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+106-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:19:5-86
+106-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:19:22-83
+107    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+107-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:20:5-87
+107-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:20:22-84
+108    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+108-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:23:5-81
+108-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:23:22-78
+109    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+109-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:24:5-83
+109-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:24:22-80
+110    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
+110-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:27:5-88
+110-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:27:22-85
+111    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+111-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:30:5-84
+111-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:30:22-81
+112    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+112-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:33:5-83
+112-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:33:22-80
+113    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+113-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
+113-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
+114    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
+114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
+115    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+115-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:26:5-110
+115-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:26:22-107
+116
+117    <application
+117-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:48:3-360:17
+118        android:name="host.exp.exponent.MainApplication"
+118-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:49:5-36
+119        android:allowBackup="true"
+119-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:50:5-31
+120        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+120-->[androidx.core:core:1.1.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\37791d22cdf73b5c35c92eb9addd3f27\core-1.1.0\AndroidManifest.xml:24:18-86
+121        android:icon="@mipmap/ic_launcher"
+121-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:51:5-39
+122        android:label="@string/app_name"
+122-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:52:5-37
+123        android:largeHeap="true"
+123-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:53:5-29
+124        android:supportsRtl="true"
+124-->[com.facebook.android:facebook-android-sdk:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\36d8e97a0dea5ca0c54825784f11758c\facebook-android-sdk-5.0.1\AndroidManifest.xml:28:18-44
+125        android:usesCleartextTraffic="true" >
+125-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:54:5-40
+126        <activity
+126-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:56:5-61:16
+127            android:name="host.exp.exponent.LauncherActivity"
+127-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:57:7-39
+128            android:exported="true"
+128-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:58:7-30
+129            android:launchMode="singleTask"
+129-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:59:7-38
+130            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+130-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:60:7-66
+131        </activity>
+132        <activity
+132-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:63:5-68:16
+133            android:name="host.exp.exponent.experience.ExperienceActivity"
+133-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:64:7-52
+134            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+134-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:65:7-77
+135            android:theme="@style/Theme.Exponent.Light"
+135-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:66:7-50
+136            android:windowSoftInputMode="adjustResize" >
+136-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:67:7-49
+137        </activity>
+138        <activity
+138-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:70:5-90:16
+139            android:name="host.exp.exponent.MainActivity"
+139-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:71:7-35
+140            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+140-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:73:7-77
+141            android:launchMode="singleTask"
+141-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:72:7-38
+142            android:theme="@style/Theme.Exponent.Splash"
+142-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:74:7-51
+143            android:windowSoftInputMode="adjustResize" >
+143-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:75:7-49
+144            <intent-filter>
+144-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:76:7-83:23
+145                <data android:scheme="expc4a7bf4c515b487dbf8b48fadc8a54e1" />
+145-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:9-69
+145-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:15-67
+146
+147                <action android:name="android.intent.action.VIEW" />
+147-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:9-60
+147-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:17-58
+148
+149                <category android:name="android.intent.category.DEFAULT" />
+149-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:9-67
+149-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:19-65
+150                <category android:name="android.intent.category.BROWSABLE" />
+150-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:9-69
+150-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:19-67
+151            </intent-filter>
+152            <intent-filter>
+152-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:84:7-88:23
+153                <action android:name="android.intent.action.MAIN" />
+153-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:85:9-60
+153-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:85:17-58
+154
+155                <category android:name="android.intent.category.LAUNCHER" />
+155-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:87:9-68
+155-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:87:19-66
+156            </intent-filter>
+157            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+158        </activity>
+159        <activity
+159-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:92:5-98:16
+160            android:name="host.exp.exponent.experience.HomeActivity"
+160-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:93:7-46
+161            android:label="@string/app_name"
+161-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:94:7-39
+162            android:launchMode="singleTask"
+162-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:95:7-38
+163            android:screenOrientation="portrait"
+163-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:96:7-43
+164            android:theme="@style/Theme.Exponent.Light" >
+164-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:97:7-50
+165        </activity>
+166        <activity
+166-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:100:5-109:15
+167            android:name="host.exp.exponent.experience.TvActivity"
+167-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:101:7-44
+168            android:label="@string/app_name"
+168-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:102:7-39
+169            android:screenOrientation="landscape"
+169-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:104:7-44
+170            android:theme="@style/Theme.Exponent.Light" >
+170-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:103:7-50
+171            <intent-filter>
+171-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:105:6-108:22
+172                <action android:name="android.intent.action.MAIN" />
+172-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:85:9-60
+172-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:85:17-58
+173
+174                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+174-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:107:8-77
+174-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:107:18-74
+175            </intent-filter>
+176        </activity>
+177        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+177-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:113:5-81
+177-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:113:15-79
+178        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
+179        <!-- ADD DEV SETTINGS HERE -->
+180        <!-- BEGIN_SDK_36 -->
+181        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+181-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:117:5-91
+181-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:117:15-89
+182        <!-- END_SDK_36 -->
+183        <!-- BEGIN_SDK_35 -->
+184        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+184-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:120:5-91
+184-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:120:15-89
+185        <!-- END_SDK_35 -->
+186        <!-- BEGIN_SDK_34 -->
+187        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+187-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:123:5-91
+187-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:123:15-89
+188        <!-- END_SDK_34 -->
+189        <!-- BEGIN_SDK_33 -->
+190        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+190-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:126:5-91
+190-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:126:15-89
+191        <!-- END_SDK_33 -->
+192        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
+193
+194        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+194-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:130:5-139:16
+194-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:131:9-70
+195            <intent-filter>
+195-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:133:7-138:23
+196                <action android:name="android.intent.action.VIEW" />
+196-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:9-60
+196-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:17-58
+197
+198                <category android:name="android.intent.category.DEFAULT" />
+198-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:9-67
+198-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:19-65
+199                <category android:name="android.intent.category.BROWSABLE" />
+199-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:9-69
+199-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:19-67
+200
+201                <data
+201-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:9-69
+202                    android:path="oauthredirect"
+202-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:137:45-73
+203                    android:scheme="com.test_app" />
+203-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:15-67
+204            </intent-filter>
+205        </activity>
+206
+207        <!-- START OF STRIPE SCHEMES -->
+208        <activity
+208-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:142:5-153:16
+209            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+209-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:145:9-72
+210            android:exported="true"
+210-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:143:9-32
+211            android:launchMode="singleTask"
+211-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:144:9-40
+212            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+212-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:146:9-79
+213            <intent-filter>
+213-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:147:9-152:25
+214                <action android:name="android.intent.action.VIEW" />
+214-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:9-60
+214-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:17-58
+215
+216                <category android:name="android.intent.category.DEFAULT" />
+216-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:9-67
+216-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:19-65
+217                <category android:name="android.intent.category.BROWSABLE" />
+217-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:9-69
+217-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:19-67
+218
+219                <data android:scheme="expo.modules.payments.stripe.e310ba32-86a3-43cb-aa81-c1e577267758" />
+219-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:9-69
+219-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:15-67
+220            </intent-filter>
+221        </activity>
+222        <!-- Versioned Activity for Stripe -->
+223        <!-- BEGIN_SDK_36 -->
+224        <activity
+224-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:156:5-167:16
+225            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+225-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:159:7-80
+226            android:exported="true"
+226-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:157:7-30
+227            android:launchMode="singleTask"
+227-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:158:7-38
+228            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+228-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:160:7-77
+229            <intent-filter>
+229-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:161:7-166:23
+230                <action android:name="android.intent.action.VIEW" />
+230-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:9-60
+230-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:17-58
+231
+232                <category android:name="android.intent.category.DEFAULT" />
+232-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:9-67
+232-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:19-65
+233                <category android:name="android.intent.category.BROWSABLE" />
+233-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:9-69
+233-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:19-67
+234
+235                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
+235-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:9-69
+235-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:15-67
+236            </intent-filter>
+237        </activity>
+238        <!-- END_SDK_36 -->
+239        <!-- BEGIN_SDK_35 -->
+240        <activity
+240-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:170:3-181:14
+241            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+241-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:173:4-77
+242            android:exported="true"
+242-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:171:4-27
+243            android:launchMode="singleTask"
+243-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:172:4-35
+244            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+244-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:174:4-74
+245            <intent-filter>
+245-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:175:4-180:20
+246                <action android:name="android.intent.action.VIEW" />
+246-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:9-60
+246-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:17-58
+247
+248                <category android:name="android.intent.category.DEFAULT" />
+248-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:9-67
+248-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:19-65
+249                <category android:name="android.intent.category.BROWSABLE" />
+249-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:9-69
+249-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:19-67
+250
+251                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
+251-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:9-69
+251-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:15-67
+252            </intent-filter>
+253        </activity>
+254        <!-- END_SDK_35 -->
+255        <!-- BEGIN_SDK_34 -->
+256        <activity
+256-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:184:5-195:16
+257            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+257-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:187:7-80
+258            android:exported="true"
+258-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:185:7-30
+259            android:launchMode="singleTask"
+259-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:186:7-38
+260            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+260-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:188:7-77
+261            <intent-filter>
+261-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:189:7-194:23
+262                <action android:name="android.intent.action.VIEW" />
+262-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:9-60
+262-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:17-58
+263
+264                <category android:name="android.intent.category.DEFAULT" />
+264-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:9-67
+264-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:19-65
+265                <category android:name="android.intent.category.BROWSABLE" />
+265-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:9-69
+265-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:19-67
+266
+267                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
+267-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:9-69
+267-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:15-67
+268            </intent-filter>
+269        </activity>
+270        <!-- END_SDK_34 -->
+271        <!-- BEGIN_SDK_33 -->
+272        <activity
+272-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:198:5-209:16
+273            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+273-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:201:7-80
+274            android:exported="true"
+274-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:199:7-30
+275            android:launchMode="singleTask"
+275-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:200:7-38
+276            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+276-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:202:7-77
+277            <intent-filter>
+277-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:203:7-208:23
+278                <action android:name="android.intent.action.VIEW" />
+278-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:9-60
+278-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:79:17-58
+279
+280                <category android:name="android.intent.category.DEFAULT" />
+280-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:9-67
+280-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:81:19-65
+281                <category android:name="android.intent.category.BROWSABLE" />
+281-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:9-69
+281-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:82:19-67
+282
+283                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
+283-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:9-69
+283-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:77:15-67
+284            </intent-filter>
+285        </activity>
+286        <!-- END_SDK_33 -->
+287        <!-- END OF STRIPE SCHEMES -->
+288
+289        <activity
+289-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:213:5-217:16
+290            android:name="host.exp.exponent.experience.ErrorActivity"
+290-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:214:7-47
+291            android:screenOrientation="portrait"
+291-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:216:7-43
+292            android:theme="@style/Theme.Exponent.Dark" >
+292-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:215:7-49
+293        </activity>
+294        <activity
+294-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:219:5-223:16
+295            android:name="host.exp.exponent.experience.InfoActivity"
+295-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:220:7-46
+296            android:screenOrientation="portrait"
+296-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:221:7-43
+297            android:theme="@style/Theme.Exponent.Light" >
+297-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:222:7-50
+298        </activity>
+299        <activity
+299-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:225:5-230:39
+300            android:name="com.facebook.FacebookActivity"
+300-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:226:7-51
+301            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+301-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:227:7-90
+302            android:label="@string/app_name"
+302-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:228:7-39
+303            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+303-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:229:7-66
+304        <activity
+304-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:232:5-236:69
+305            android:name="com.facebook.ads.InterstitialAdActivity"
+305-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:233:7-61
+306            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+306-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:234:7-90
+307            android:label="@string/app_name"
+307-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:235:7-39
+308            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+308-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:236:7-66
+309
+310        <service
+310-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:238:5-240:34
+311            android:name="host.exp.exponent.ExponentIntentService"
+311-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:239:7-44
+312            android:exported="false" />
+312-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:240:7-31
+313
+314        <!-- Analytics -->
+315        <receiver
+315-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:243:5-249:16
+316            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
+316-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:244:7-72
+317            android:exported="true" >
+317-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:245:7-30
+318            <intent-filter>
+318-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:246:7-248:23
+319                <action android:name="com.android.vending.INSTALL_REFERRER" />
+319-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:247:9-71
+319-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:247:17-68
+320            </intent-filter>
+321        </receiver>
+322
+323        <!--
+324    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+325    TODO: turn it back on when it's fixed
+326    <service
+327      android:name="com.google.android.gms.analytics.CampaignTrackingService"
+328      android:enabled="true"
+329      android:exported="false" />
+330        -->
+331
+332        <receiver
+332-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:259:5-264:16
+333            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+333-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:259:15-80
+334            android:enabled="true"
+334-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:260:15-37
+335            android:exported="false" >
+335-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\189d966746524b2511ceb6a3cee7507f\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:33:13-37
+336            <intent-filter>
+336-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:261:7-263:23
+337                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+337-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:262:9-86
+337-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:262:17-83
+338            </intent-filter>
+339        </receiver>
+340
+341        <service
+341-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:266:5-268:40
+342            android:name="com.google.android.gms.analytics.AnalyticsService"
+342-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:266:14-78
+343            android:enabled="true"
+343-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:267:14-36
+344            android:exported="false" />
+344-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:268:14-38
+345
+346        <!-- GCM -->
+347        <receiver
+347-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:271:5-281:16
+348            android:name="com.google.android.gms.gcm.GcmReceiver"
+348-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:272:7-60
+349            android:exported="true"
+349-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:273:7-30
+350            android:permission="com.google.android.c2dm.permission.SEND" >
+350-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:274:7-67
+351            <intent-filter>
+351-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:275:7-280:23
+352                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+352-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:276:9-72
+352-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:276:17-70
+353                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+353-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:277:9-77
+353-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:277:17-75
+354
+355                <category android:name="com.test_app" />
+355-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:279:9-48
+355-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:279:19-46
+356            </intent-filter>
+357        </receiver>
+358
+359        <service
+359-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:283:5-289:15
+360            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
+360-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:284:7-53
+361            android:exported="false" >
+361-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:285:7-31
+362            <intent-filter>
+362-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:286:7-288:23
+363                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+363-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:276:9-72
+363-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:276:17-70
+364            </intent-filter>
+365        </service>
+366        <service
+366-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:290:5-296:15
+367            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
+367-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:291:7-60
+368            android:exported="false" >
+368-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:292:7-31
+369            <intent-filter>
+369-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:293:7-295:23
+370                <action android:name="com.google.android.gms.iid.InstanceID" />
+370-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:294:9-71
+370-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:294:17-69
+371            </intent-filter>
+372        </service>
+373        <service
+373-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:297:5-300:15
+374            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
+374-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:298:7-55
+375            android:exported="false" >
+375-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:299:7-31
+376        </service>
+377
+378        <!-- FCM -->
+379        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
+379-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:303:5-308:15
+379-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:304:7-50
+380            <intent-filter>
+380-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:305:7-307:23
+381                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+381-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:306:9-69
+381-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:306:17-67
+382            </intent-filter>
+383        </service>
+384
+385        <meta-data
+385-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:309:5-311:62
+386            android:name="com.google.firebase.messaging.default_notification_icon"
+386-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:310:7-77
+387            android:resource="@drawable/shell_notification_icon" />
+387-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:311:7-59
+388        <meta-data
+388-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:312:5-314:47
+389            android:name="com.google.firebase.messaging.default_notification_color"
+389-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:313:7-78
+390            android:resource="@color/colorAccent" />
+390-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:314:7-44
+391
+392        <service
+392-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:315:5-318:15
+393            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
+393-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:316:7-55
+394            android:exported="false" >
+394-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:317:7-31
+395        </service>
+396
+397        <!-- ImagePicker native module -->
+398        <activity
+398-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:321:5-324:16
+399            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+399-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:322:7-70
+400            android:theme="@style/Base.Theme.AppCompat" >
+400-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:323:7-50
+401        </activity>
+402
+403        <!-- ADD FABRIC CONFIG HERE -->
+404        <!-- BEGIN FABRIC CONFIG -->
+405        <meta-data
+405-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:329:5-331:65
+406            android:name="io.fabric.ApiKey"
+406-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:330:7-38
+407            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
+407-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:331:7-63
+408        <!-- END FABRIC CONFIG -->
+409
+410
+411        <!-- ADD GOOGLE MAPS CONFIG HERE -->
+412        <!-- BEGIN GOOGLE MAPS CONFIG -->
+413        <meta-data
+413-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:336:5-338:64
+414            android:name="com.google.android.geo.API_KEY"
+414-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:337:7-52
+415            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
+415-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:338:7-62
+416        <!-- END GOOGLE MAPS CONFIG -->
+417
+418
+419        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
+420        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
+421        <meta-data
+421-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:343:5-345:63
+422            android:name="com.google.android.gms.ads.APPLICATION_ID"
+422-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:344:7-63
+423            android:value="ca-app-pub-3940256099942544~3347511713" />
+423-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:345:7-61
+424        <meta-data
+424-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:346:5-107
+425            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+425-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:346:16-84
+426            android:value="true" />
+426-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:346:85-105
+427        <!-- END GOOGLE MOBILE ADS CONFIG -->
+428
+429
+430        <!-- ADD BRANCH CONFIG HERE -->
+431
+432
+433        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
+434        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
+435        <!-- Tags below need to be in one line with no whitespace after android:value -->
+436        <!-- in order for XDL to be able to replace values in them -->
+437        <meta-data
+437-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:355:5-95
+438            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+438-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:355:16-71
+439            android:value="false" />
+439-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:355:72-93
+440        <meta-data
+440-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:356:5-87
+441            android:name="com.facebook.sdk.AutoInitEnabled"
+441-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:356:16-63
+442            android:value="false" />
+442-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:356:64-85
+443        <meta-data
+443-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:357:5-101
+444            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+444-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:357:16-77
+445            android:value="false" />
+445-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:357:78-99
+446        <meta-data
+446-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:359:5-109
+447            android:name="standaloneStripeScheme"
+447-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:359:16-53
+448            android:value="e310ba32-86a3-43cb-aa81-c1e577267758" />
+448-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:359:54-106
+449        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+450        <!-- Scheduled notifications -->
+451        <receiver
+451-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:79:9-81:40
+452            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
+452-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:80:13-89
+453            android:exported="false" />
+453-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:81:13-37
+454        <receiver
+454-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:82:9-92:20
+455            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
+455-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:83:13-95
+456            android:exported="true" >
+456-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:84:13-36
+457            <intent-filter>
+457-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:85:13-91:29
+458                <action android:name="android.intent.action.REBOOT" />
+458-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:86:17-71
+458-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:86:25-68
+459                <action android:name="android.intent.action.BOOT_COMPLETED" />
+459-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:87:17-79
+459-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:87:25-76
+460                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+460-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:88:17-81
+460-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:88:25-78
+461                <action android:name="android.intent.action.TIME_CHANGED" />
+461-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:89:17-77
+461-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:89:25-74
+462                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+462-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:90:17-82
+462-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:90:25-79
+463            </intent-filter>
+464        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
+465        <provider
+465-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:96:9-104:20
+466            android:name="androidx.core.content.FileProvider"
+466-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:97:13-62
+467            android:authorities="com.test_app.provider"
+467-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:98:13-60
+468            android:exported="false"
+468-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:99:13-37
+469            android:grantUriPermissions="true" >
+469-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:100:13-47
+470            <meta-data
+470-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+471                android:name="android.support.FILE_PROVIDER_PATHS"
+471-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+472                android:resource="@xml/provider_paths" />
+472-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+473        </provider>
+474        <provider
+474-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:105:9-113:20
+475            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
+475-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:106:13-109
+476            android:authorities="com.test_app.fileprovider"
+476-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:107:13-64
+477            android:exported="false"
+477-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:108:13-37
+478            android:grantUriPermissions="true" >
+478-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:109:13-47
+479            <meta-data
+479-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+480                android:name="android.support.FILE_PROVIDER_PATHS"
+480-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+481                android:resource="@xml/provider_paths" />
+481-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+482        </provider>
+483        <provider
+483-->[:expo-file-system] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-27:20
+484            android:name="expo.modules.filesystem.FileSystemFileProvider"
+484-->[:expo-file-system] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-74
+485            android:authorities="com.test_app.FileSystemFileProvider"
+485-->[:expo-file-system] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:13-74
+486            android:exported="false"
+486-->[:expo-file-system] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:21:13-37
+487            android:grantUriPermissions="true" >
+487-->[:expo-file-system] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-file-system\android\build\intermediates\library_manifest\release\AndroidManifest.xml:22:13-47
+488            <meta-data
+488-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+489                android:name="android.support.FILE_PROVIDER_PATHS"
+489-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+490                android:resource="@xml/file_system_provider_paths" />
+490-->[host.exp.exponent:expoview:36.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+491        </provider>
+492
+493        <service
+493-->[:expo-location] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:9-18:40
+494            android:name="expo.modules.location.services.LocationTaskService"
+494-->[:expo-location] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-78
+495            android:exported="false" />
+495-->[:expo-location] C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\node_modules\expo-location\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:13-37
+496
+497        <activity android:name="com.facebook.CustomTabMainActivity" />
+497-->[com.facebook.android:facebook-common:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\e13c8946750ac03158e0ec21ef34ab52\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:9-71
+497-->[com.facebook.android:facebook-common:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\e13c8946750ac03158e0ec21ef34ab52\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:19-68
+498        <activity android:name="com.facebook.CustomTabActivity" />
+498-->[com.facebook.android:facebook-common:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\e13c8946750ac03158e0ec21ef34ab52\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:9-67
+498-->[com.facebook.android:facebook-common:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\e13c8946750ac03158e0ec21ef34ab52\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:19-64
+499        <activity
+499-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:15:9-18:40
+500            android:name="com.facebook.ads.AudienceNetworkActivity"
+500-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:16:13-68
+501            android:configChanges="keyboardHidden|orientation|screenSize"
+501-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:17:13-74
+502            android:exported="false" />
+502-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:18:13-37
+503        <activity
+503-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:19:9-23:39
+504            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+504-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:20:13-74
+505            android:configChanges="keyboardHidden|orientation|screenSize"
+505-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:21:13-74
+506            android:exported="false"
+506-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:22:13-37
+507            android:process=":adnw" />
+507-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:23:13-36
+508
+509        <service
+509-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:25:9-27:40
+510            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+510-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:26:13-83
+511            android:exported="false" />
+511-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:27:13-37
+512        <service
+512-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:28:9-31:39
+513            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+513-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:29:13-77
+514            android:exported="false"
+514-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:30:13-37
+515            android:process=":adnw" />
+515-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\d4edc3cdf8016a65994b8b48a80be775\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:31:13-36
+516        <service
+516-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\189d966746524b2511ceb6a3cee7507f\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:40:9-44:72
+517            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+517-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\189d966746524b2511ceb6a3cee7507f\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:41:13-80
+518            android:enabled="true"
+518-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\189d966746524b2511ceb6a3cee7507f\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:42:13-35
+519            android:exported="false"
+519-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\189d966746524b2511ceb6a3cee7507f\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:43:13-37
+520            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+520-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\189d966746524b2511ceb6a3cee7507f\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:44:13-69
+521        <uses-library
+521-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\66867add651b6f02e96940d6dbd653da\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+522            android:name="org.apache.http.legacy"
+522-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\66867add651b6f02e96940d6dbd653da\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+523            android:required="false" />
+523-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\66867add651b6f02e96940d6dbd653da\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+524
+525        <activity
+525-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+526            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+526-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+527            android:excludeFromRecents="true"
+527-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+528            android:exported="false"
+528-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+529            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+529-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+530        <!--
+531            Service handling Google Sign-In user revocation. For apps that do not integrate with
+532            Google Sign-In, this service will never be started.
+533        -->
+534        <service
+534-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+535            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+535-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+536            android:exported="true"
+536-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+537            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+537-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\84e38aaf1b41d4ecf3c5098a34dd9486\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+538
+539        <activity
+539-->[net.openid:appauth:0.7.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\336e12b812491d5c80eb5abd45954e02\jetified-appauth-0.7.1\AndroidManifest.xml:27:9-31:75
+540            android:name="net.openid.appauth.AuthorizationManagementActivity"
+540-->[net.openid:appauth:0.7.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\336e12b812491d5c80eb5abd45954e02\jetified-appauth-0.7.1\AndroidManifest.xml:28:13-78
+541            android:exported="false"
+541-->[net.openid:appauth:0.7.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\336e12b812491d5c80eb5abd45954e02\jetified-appauth-0.7.1\AndroidManifest.xml:29:13-37
+542            android:launchMode="singleTask"
+542-->[net.openid:appauth:0.7.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\336e12b812491d5c80eb5abd45954e02\jetified-appauth-0.7.1\AndroidManifest.xml:30:13-44
+543            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+543-->[net.openid:appauth:0.7.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\336e12b812491d5c80eb5abd45954e02\jetified-appauth-0.7.1\AndroidManifest.xml:31:13-72
+544
+545        <service
+545-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+546            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+546-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+547            android:exported="false" />
+547-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+548        <service
+548-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+549            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+549-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+550            android:exported="false" />
+550-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+551        <service
+551-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+552            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+552-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+553            android:exported="false" />
+553-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\b09c8a9909289eb782db7139ae227fa7\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+554        <!--
+555             FirebaseMessagingService performs security checks at runtime,
+556             but set to not exported to explicitly avoid allowing another app to call it.
+557        -->
+558        <service
+558-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f12293f4c25c7defa8c51aa4bde39879\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
+559            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+559-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f12293f4c25c7defa8c51aa4bde39879\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
+560            android:exported="false" >
+560-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f12293f4c25c7defa8c51aa4bde39879\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
+561            <intent-filter android:priority="-500" >
+561-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:305:7-307:23
+562                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+562-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:306:9-69
+562-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:306:17-67
+563            </intent-filter>
+564        </service>
+565        <service
+565-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f6fce5cc1cf2996466555ab4ac7e30fb\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:27:9-33:19
+566            android:name="com.google.firebase.components.ComponentDiscoveryService"
+566-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f6fce5cc1cf2996466555ab4ac7e30fb\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:28:13-84
+567            android:exported="false" >
+567-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f6fce5cc1cf2996466555ab4ac7e30fb\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:29:13-37
+568            <meta-data
+568-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f6fce5cc1cf2996466555ab4ac7e30fb\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:30:13-32:85
+569                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+569-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f6fce5cc1cf2996466555ab4ac7e30fb\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:31:17-139
+570                android:value="com.google.firebase.components.ComponentRegistrar" />
+570-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f6fce5cc1cf2996466555ab4ac7e30fb\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:32:17-82
+571            <meta-data
+571-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\fe218a6bfc4fe66bca3a0e3d4cc0478a\jetified-firebase-iid-18.0.0\AndroidManifest.xml:32:13-34:85
+572                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+572-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\fe218a6bfc4fe66bca3a0e3d4cc0478a\jetified-firebase-iid-18.0.0\AndroidManifest.xml:33:17-96
+573                android:value="com.google.firebase.components.ComponentRegistrar" />
+573-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\fe218a6bfc4fe66bca3a0e3d4cc0478a\jetified-firebase-iid-18.0.0\AndroidManifest.xml:34:17-82
+574        </service>
+575
+576        <receiver
+576-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\fe218a6bfc4fe66bca3a0e3d4cc0478a\jetified-firebase-iid-18.0.0\AndroidManifest.xml:37:9-44:20
+577            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+577-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\fe218a6bfc4fe66bca3a0e3d4cc0478a\jetified-firebase-iid-18.0.0\AndroidManifest.xml:38:13-78
+578            android:exported="true"
+578-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\fe218a6bfc4fe66bca3a0e3d4cc0478a\jetified-firebase-iid-18.0.0\AndroidManifest.xml:39:13-36
+579            android:permission="com.google.android.c2dm.permission.SEND" >
+579-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\fe218a6bfc4fe66bca3a0e3d4cc0478a\jetified-firebase-iid-18.0.0\AndroidManifest.xml:40:13-73
+580            <intent-filter>
+580-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:286:7-288:23
+581                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+581-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:276:9-72
+581-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:276:17-70
+582            </intent-filter>
+583        </receiver>
+584
+585        <activity
+585-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f3b7f68d46eb8c03d3890f7ff4d0f009\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+586            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+586-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f3b7f68d46eb8c03d3890f7ff4d0f009\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+587            android:exported="false"
+587-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f3b7f68d46eb8c03d3890f7ff4d0f009\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+588            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+588-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\f3b7f68d46eb8c03d3890f7ff4d0f009\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+589
+590        <provider
+590-->[com.google.firebase:firebase-common:17.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\14ee5cc2ed6c1aea1613270a64295d30\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+591            android:name="com.google.firebase.provider.FirebaseInitProvider"
+591-->[com.google.firebase:firebase-common:17.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\14ee5cc2ed6c1aea1613270a64295d30\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+592            android:authorities="com.test_app.firebaseinitprovider"
+592-->[com.google.firebase:firebase-common:17.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\14ee5cc2ed6c1aea1613270a64295d30\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+593            android:exported="false"
+593-->[com.google.firebase:firebase-common:17.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\14ee5cc2ed6c1aea1613270a64295d30\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+594            android:initOrder="100" />
+594-->[com.google.firebase:firebase-common:17.0.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\14ee5cc2ed6c1aea1613270a64295d30\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+595
+596        <receiver
+596-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:29:9-33:20
+597            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+597-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:30:13-85
+598            android:enabled="true"
+598-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:31:13-35
+599            android:exported="false" >
+599-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:32:13-37
+600        </receiver>
+601        <receiver
+601-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:34:9-42:20
+602            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+602-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:35:13-100
+603            android:enabled="true"
+603-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:36:13-35
+604            android:exported="true"
+604-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:37:13-36
+605            android:permission="android.permission.INSTALL_PACKAGES" >
+605-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:38:13-69
+606            <intent-filter>
+606-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:246:7-248:23
+607                <action android:name="com.android.vending.INSTALL_REFERRER" />
+607-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:247:9-71
+607-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:247:17-68
+608            </intent-filter>
+609        </receiver>
+610
+611        <service
+611-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:44:9-47:40
+612            android:name="com.google.android.gms.measurement.AppMeasurementService"
+612-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:45:13-84
+613            android:enabled="true"
+613-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:46:13-35
+614            android:exported="false" />
+614-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:47:13-37
+615        <service
+615-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:48:9-52:72
+616            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+616-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:49:13-87
+617            android:enabled="true"
+617-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:50:13-35
+618            android:exported="false"
+618-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:51:13-37
+619            android:permission="android.permission.BIND_JOB_SERVICE" />
+619-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\1aa5ee55ec3cd366c7576204d33c0ef9\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:52:13-69
+620
+621        <meta-data
+621-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\80b731df7ea88d612400a723c83d68a8\jetified-play-services-basement-16.2.0\AndroidManifest.xml:23:9-25:69
+622            android:name="com.google.android.gms.version"
+622-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\80b731df7ea88d612400a723c83d68a8\jetified-play-services-basement-16.2.0\AndroidManifest.xml:24:13-58
+623            android:value="@integer/google_play_services_version" />
+623-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\80b731df7ea88d612400a723c83d68a8\jetified-play-services-basement-16.2.0\AndroidManifest.xml:25:13-66
+624        <!--
+625         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+626         with the application context. This config is merged in with the host app's manifest,
+627         but there can only be one provider with the same authority activated at any given
+628         point; so if the end user has two or more different apps that use Facebook SDK, only the
+629         first one will be able to use the provider. To work around this problem, we use the
+630         following placeholder in the authority to identify each host application as if it was
+631         a completely different provider.
+632        -->
+633        <provider
+633-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:39:9-42:40
+634            android:name="com.facebook.internal.FacebookInitProvider"
+634-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:40:13-70
+635            android:authorities="com.test_app.FacebookInitProvider"
+635-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:41:13-72
+636            android:exported="false" />
+636-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:42:13-37
+637
+638        <receiver
+638-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:44:9-50:20
+639            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+639-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:45:13-86
+640            android:exported="false" >
+640-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:46:13-37
+641            <intent-filter>
+641-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:47:13-49:29
+642                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+642-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:17-95
+642-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:25-92
+643            </intent-filter>
+644        </receiver>
+645        <receiver
+645-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:51:9-58:20
+646            android:name="com.facebook.CampaignTrackingReceiver"
+646-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:52:13-65
+647            android:exported="true"
+647-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:53:13-36
+648            android:permission="android.permission.INSTALL_PACKAGES" >
+648-->[com.facebook.android:facebook-core:5.0.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\4362000dd3d80293274055f7cb453c40\jetified-facebook-core-5.0.1\AndroidManifest.xml:54:13-69
+649            <intent-filter>
+649-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:246:7-248:23
+650                <action android:name="com.android.vending.INSTALL_REFERRER" />
+650-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:247:9-71
+650-->C:\Users\Pankaj\Documents\NEDINAREACTUPDATE\android\app\src\main\AndroidManifest.xml:247:17-68
+651            </intent-filter>
+652        </receiver>
+653
+654        <provider
+654-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\846f93c89d0c426b3590cf6bda474442\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+655            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+655-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\846f93c89d0c426b3590cf6bda474442\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+656            android:authorities="com.test_app.crashlyticsinitprovider"
+656-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\846f93c89d0c426b3590cf6bda474442\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+657            android:exported="false"
+657-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\846f93c89d0c426b3590cf6bda474442\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+658            android:initOrder="90" />
+658-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\Pankaj\.gradle\caches\transforms-2\files-2.1\846f93c89d0c426b3590cf6bda474442\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+659    </application>
+660
+661</manifest>
